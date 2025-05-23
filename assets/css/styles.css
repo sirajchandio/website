@@ -317,19 +317,24 @@ body.dark-theme{
   transition: background .4s;
 }
 
-.home__perfil{
+.home__perfil {
+  /* Keep your existing container styles */
   width: 170px;
   height: 260px;
-  background: black;
   border-radius: 5.5rem;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  position: relative; /* Added this */
 }
 
-.home__perfil img{
-  width: 150px;
+.home__perfil img {
+  width: 100%; /* Changed from 450px to 100% */
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  position: absolute;
 }
 
 .home__shape-wawes,

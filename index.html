@@ -1,664 +1,535 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
-        <!--=============== REMIXICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"> Siraj </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__itemm">
+              <a href="#home" class="nav__link active-link">
+                <i class="ri-home-line"></i> Home
+              </a>
+            </li>
+            <li class="nav__itemm">
+              <a href="#skills" class="nav__link">
+                <i class="ri-code-line"></i> Skills
+              </a>
+            </li>
+            <li class="nav__itemm">
+              <a href="#qualification" class="nav__link">
+                <i class="ri-book-line"></i> Qualifications
+              </a>
+            </li>
+            <!-- <li class="nav__itemm">
+              <a href="#achievements" class="nav__link">
+                <i class="ri-trophy-line"></i> Achievements
+              </a>
+            </li> -->
+            <li class="nav__itemm">
+              <a href="#projects" class="nav__link">
+                <i class="ri-macbook-line"></i> Projects
+              </a>
+            </li>
+            <li class="nav__itemm">
+              <a href="#contact" class="nav__link">
+                <i class="ri-chat-4-line"></i> Contact Me
+              </a>
+            </li>
+          </ul>
 
-        <title>Alizeh Codes</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    AlizehCodes
-                </a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__itemm">
-                            <a href="#home" class="nav__link active-link">
-                                <i class="ri-home-line"></i> Home
-                            </a>
-                        </li>
-                        <li class="nav__itemm">
-                            <a href="#skills" class="nav__link">
-                                <i class="ri-code-line"></i> Skills
-                            </a>
-                        </li>
-                        <li class="nav__itemm">
-                            <a href="#qualification" class="nav__link">
-                                <i class="ri-book-line"></i> Qualifications
-                            </a>
-                        </li>
-                        <li class="nav__itemm">
-                            <a href="#achievements" class="nav__link">
-                                <i class="ri-trophy-line"></i> Achievements
-                            </a>
-                        </li>
-                        <li class="nav__itemm">
-                            <a href="#projects" class="nav__link">
-                                <i class="ri-macbook-line"></i> Projects
-                            </a>
-                        </li>
-                        <li class="nav__itemm">
-                            <a href="#contact" class="nav__link">
-                                <i class="ri-chat-4-line"></i> Contact Me
-                            </a>
-                        </li>
-                    </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
 
-                    <!-- Close button -->
-                    <div class="nav__close" id="nav-close"> 
-                        <i class="ri-close-line"></i>
-                    </div>
+        <div class="nav__buttons">
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-                </div>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-                <div class="nav__buttons">
-                    <!-- Theme change button -->
-                    <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-                    <!-- Toggle button -->
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-line"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home__container container grid section__border">
-                    <div class="home__data grid">
-                        <h1 class="home__title">
-                            Hi, I'm Aliza <br>
-                            Software Engineer <br>
-                            Based in Pakistan <br>
-                        </h1>
-                        <div class="home__blob grid">
-                            <div class="home__perfil">
-                                <img src="PF.jpg" alt="home perfil">
-                            </div>
-                            <img src="assets/img/shape-wawes.svg" alt="" class="home__shape-wawes">
-                            <img src="assets/img/shape-circle.svg" alt="" class="home__shape-circle">
-                        </div>
-                        <ul class="home__social">
-                            <a href="#" target="_blank" class="home__social-link">
-                                <i class="ri-linkedin-box-line"></i>
-                            </a>
-                            <a href="#" target="_blank" class="home__social-link">
-                                <i class="ri-github-line"></i>
-                            </a>
-                            <a href="#" target="_blank" class="home__social-link">
-                                <i class="ri-twitter-line"></i>
-                            </a>
-                        </ul>
-                    </div>
-                    <!--==================== HOME INFO 1 ====================-->
-                    <div class="home__info">
-                        <div>
-                            <h3 class="home__info-title">
-                                BIOGRAPHY
-                            </h3>
-                            <p class="home__info-description">
-                                Hi, I'm Alizeh, Frontend Developer.
-                                Passionate about creating wonderful and interactive websites.
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="home__info-title">
-                                CONTACT
-                            </h3>
-                            <p class="home__info-description">
-                                Russia <br>
-                                contactme@gmail.com <br>
-                                +123 456 7890 <br>
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="home__info-title">
-                                ACHIEVEMENTS
-                            </h3>
-                            <p class="home__info-description">
-                                Selected as - Google Intern <br>
-                                Selected as - Amazon Full Time Developer<br>
-                            </p>
-                        </div>
-                    </div>
-
-                    <!--==================== HOME INFO 2 ====================-->
-                    <div class="home__info">
-                        <div>
-                            <h3 class="home__info-title">
-                                GRADUATED
-                            </h3>
-                            <p class="home__info-number">
-                                2022
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="home__info-title">
-                                COMPLETED PROJECTS
-                            </h3>
-                            <p class="home__info-number">
-                                15+
-                            </p>
-                        </div>
-                        <div>
-                            <h3 class="home__info-title">
-                                COMPANIES WORKED FOR
-                            </h3>
-                            <p class="home__info-number">
-                                2+
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">
-                    Skills
-                </h2>
-                <span class="section__subtitle">
-                     Experience
-                </span>
-                <div class="skills__container container grid section__border">
-                    <!--==================== SKILLS 1 ====================-->
-                    <div class="skills__content">
-                        <h3 class="skills__title">
-                            <i class="ri-braces-line"></i> Software Developer
-                        </h3>
-                        <div class="skills__info">
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-java-120.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    Java
-                                </h3>
-                                <span class="skills__subtitle">
-                                    Advanced
-                                </span>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-android-studio-100.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    Android
-                                </h3>
-                                <span class="skills__subtitle">
-                                    Intermediate
-                                </span>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-flutter-120.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    Flutter
-                                </h3>
-                                <span class="skills__subtitle">
-                                    Intermediate
-                                </span>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-google-firebase-console-120.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    Firebase
-                                </h3>
-                                <span class="skills__subtitle">
-                                    Intermediate
-                                </span>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/git-icon.svg" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    Git
-                                </h3>
-                                <span class="skills__subtitle">
-                                    Advanced
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== SKILLS 2 ====================-->
-                    <div class="skills__content">
-                        <h3 class="skills__title">
-                            <i class="ri-braces-line"></i> Computer Fundamentals
-                        </h3>
-                        <div class="skills__info">
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-binary-code-100.png" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    DSA
-                                </h3>
-                                <span class="skills__subtitle">
-                                    Intermediate
-                                </span>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-plugin-100.png" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    OOPS
-                                </h3>
-                                <span class="skills__subtitle">
-                                    Advanced
-                                </span>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-database-100.png" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    DBMS
-                                </h3>
-                                <span class="skills__subtitle">
-                                    Intermediate
-                                </span>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-console-100.png" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    OS
-                                </h3>
-                                <span class="skills__subtitle">
-                                    Intermediate
-                                </span>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__blob">
-                                    <img src="assets/img/icons8-multicast-100.png" alt="skills image">
-                                </div>
-                                <h3 class="skills__name">
-                                    CN
-                                </h3>
-                                <span class="skills__subtitle">
-                                    Advanced
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section" id="qualification">
-                <h2 class="section__title">
-                    Qualification
-                </h2>
-                <span class="section__subtitle">
-                    Experience and Education
-                </span>
-                <div class="qualification__container container grid section__border">
-                    <!--==================== QUALIFICATION 1 ====================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-book-line"></i> Education
-                        </h3>
-                        <div class="qualification__info">
-                            <div>
-                                <h3 class="qualification__name">
-                                    Bachelor Of Technology [B.TECH]
-                                </h3>
-                                <span class="qualification__country">
-                                    University Of New World
-                                </span>
-                                <span class="qualification__year">
-                                    2024 - Present
-                                </span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__name">
-                                    Junior College
-                                </h3>
-                                <span class="qualification__country">
-                                    New World Junior College
-                                </span>
-                                <span class="qualification__year">
-                                    2020 - 2024
-                                </span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__name">
-                                    High School
-                                </h3>
-                                <span class="qualification__country">
-                                    New World High School
-                                </span>
-                                <span class="qualification__year">
-                                    2010 - 2019
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <!--==================== QUALIFICATION 2 ====================-->
-                    <div class="qualification__content">
-                        <h3 class="qualification__title">
-                            <i class="ri-building-line"></i> Experience
-                        </h3>
-                        <div class="qualification__info">
-                            <div>
-                                <h3 class="qualification__name">
-                                    Web Developer
-                                </h3>
-                                <span class="qualification__country">
-                                    google
-                                </span>
-                                <span class="qualification__year">
-                                    Feb 2021 - May 2022
-                                </span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__name">
-                                    Full Stack Developer
-                                </h3>
-                                <span class="qualification__country">
-                                    Amazon
-                                </span>
-                                <span class="qualification__year">
-                                    Oct 2022 - Mar 2023
-                                </span>
-                            </div>
-                            <div>
-                                <h3 class="qualification__name">
-                                    SDE Full Time
-                                </h3>
-                                <span class="qualification__country">
-                                    Microsoft
-                                </span>
-                                <span class="qualification__year">
-                                    Sep 2023 - Present
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification__img">
-            </section>
-
-            <!--==================== ACHIEVEMENTS ====================-->
-            <section class="achievements section" id="achievements">
-                <h2 class="section__title">
-                    Achievements
-                </h2>
-                <span class="section__subtitle">
-                    What makes me stand out
-                </span>
-                <div class="achievements__container container grid section__border">
-                    <div class="achievements__card">
-                        <i class="ri-trophy-line"></i>
-                        <h2 class="achievements__title">
-                            Winner <br>
-                            Summer Amazon Hackathon
-                        </h2>
-                        <p class="achievements__description">
-                            Won Summer Amazon Hackathon, the biggest hackathon of Amazon.
-                        </p>
-                        <div class="achievements__border">
-                        </div>
-                    </div>
-                    <div class="achievements__card">
-                        <i class="ri-trophy-line"></i>
-                        <h2 class="achievements__title">
-                            Winner <br>
-                            Summer Amazon Hackathon
-                        </h2>
-                        <p class="achievements__description">
-                            Won Summer Amazon Hackathon, the biggest hackathon of Amazon.
-                        </p>
-                        <div class="achievements__border">
-                        </div>
-                    </div>
-                    <div class="achievements__card">
-                        <i class="ri-trophy-line"></i>
-                        <h2 class="achievements__title">
-                            Winner <br>
-                            Summer Amazon Hackathon
-                        </h2>
-                        <p class="achievements__description">
-                            Won Summer Amazon Hackathon, the biggest hackathon of Amazon.
-                        </p>
-                        <div class="achievements__border">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== PROJECTS ====================-->
-            <section class="projects section" id="projects">
-                <h2 class="section__title">
-                    Projects
-                </h2>
-                <span class="section__subtitle">
-                    My personal projects
-                </span>
-                <div class="container section__border">
-                    <div class="projects__container swiper">
-                        <div class="swiper-wrapper">
-                            <!--==================== PROJECT 1 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="TRAVEL.png" alt="projects image" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        Fullstack
-                                    </span>
-                                    <h1 class="projects__title">
-                                        Travel Website
-                                    </h1>
-                                    <a href="#" class="projects__button">
-                                        Demo <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--==================== PROJECT 2 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="PORTFOLIO-.png" alt="projects image" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        front-end
-                                    </span>
-                                    <h1 class="projects__title">
-                                        Portfolio Website
-                                    </h1>
-                                    <a href="#" class="projects__button">
-                                        Demo <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--==================== PROJECT 3 ====================-->
-                            <div class="projects__content swiper-slide">
-                                <img src="MOVIES_.png" alt="projects image" class="projects__img">
-                                <div>
-                                    <span class="projects__subtitle">
-                                        front-end
-                                    </span>
-                                    <h1 class="projects__title">
-                                        Movies Website
-                                    </h1>
-                                    <a href="#" class="projects__button">
-                                        Demo <i class="ri-arrow-right-line"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Swiper arrows -->
-                        <div class="swiper-button-next">
-                            <i class="ri-arrow-right-s-line"></i>
-                        </div>
-                        <div class="swiper-button-prev">
-                            <i class="ri-arrow-left-s-line"></i>
-                        </div>
-                        <!-- Swiper pagination -->
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <!-- <section class="testimonial section"></section> -->
-
-            <!--==================== CONTACT ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section__title">
-                    Contact Me
-                </h2>
-                <span class="section__subtitle">
-                    Get in touch
-                </span>
-                <div class="contact__container container grid section__border">
-                    <div class="contact__content">
-                        <h3 class="contact__title">
-                            <i class="ri-chat-3-line"></i>
-                            Text me
-                        </h3>
-                        <div class="contact__info">
-                            <div class="contact__data">
-                                <span class="contact__data-title">
-                                    Email
-                                </span>
-                                <span class="contact__data-info">
-                                    contactme@gmail.com
-                                </span>
-                            </div>
-                            <div class="contact__data">
-                                <span class="contact__data-title">
-                                    WhatsApp
-                                </span>
-                                <span class="contact__data-info">
-                                    +xxxxxxxxxx
-                                </span>
-                                <a href="#" target="_blank" class="contact__button">
-                                    Text me <i class="ri-arrow-right-line"></i>
-                                </a>
-                            </div>
-                            <div class="contact__data">
-                                <span class="contact__data-title">
-                                    Telegram
-                                </span>
-                                <span class="contact__data-info">
-                                    https://t.me/contactme
-                                </span>
-                                <a href="https://t.me/kritikmodi" target="_blank" class="contact__button">
-                                    Join <i class="ri-arrow-right-line"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact__content">
-                        <h3 class="contact__title">
-                            <i class="ri-send-plane-line"></i> Have a query for me?
-                        </h3>
-                        <form action="" class="contact__form" id="contact-form">
-                            <div class="contact__form-div">
-                                <label class="contact__form-tag">
-                                    Name
-                                </label>
-                                <input type="text" name="user_name" required placeholder="Your name" class="contact__form-input" id="contact-name">
-                            </div>
-                            <div class="contact__form-div">
-                                <label class="contact__form-tag">
-                                    Email
-                                </label>
-                                <input type="email" name="user_email" required placeholder="Your email" class="contact__form-input" id="contact-email">
-                            </div>
-                            <div class="contact__form-div contact__form-area">
-                                <label class="contact__form-tag">
-                                    Message
-                                </label>
-                                <textarea name="user_project" placeholder="Ask me something?" id="contact-project" class="contact__form-input"></textarea>
-                            </div>
-                            <p class="contact__message" id="contact-message"></p>
-                            <button type="submit" class="contact__button">
-                                Send <i class="ri-arrow-right-up-line"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer__container container">
-                <h1 class="footer__title">
-                    Alizeh COdes
-                </h1>
-                <p>
-                    Frontend Developer
-                </p>
-                <ul class="footer__list">
-                    <li>
-                        <a href="#home" class="footer__link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#skills" class="footer__link">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#projects" class="footer__link">Projects</a>
-                    </li>
-                </ul>
-                <ul class="footer__social">
-                    <a href="#" target="_blank" class="footer__social-link">
-                        <i class="ri-linkedin-box-line"></i>
-                    </a>
-                    <a href="#" target="_blank" class="footer__social-link">
-                        <i class="ri-github-line"></i>
-                    </a>
-                    <a href="#" target="_blank" class="footer__social-link">
-                        <i class="ri-twitter-line"></i>
-                    </a>
-                </ul>
-                <span class="footer__copy">
-                    &#169; Alizeh Codes | All rights reserved.
-                </span>
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid section__border">
+          <div class="home__data grid">
+            <h1 class="home__title">
+              Hi, I'm Siraj <br />
+              Software Engineer <br />
+              Based in Karachi <br />
+            </h1>
+            <div class="home__blob grid">
+              <div class="home__perfil">
+                <img src="PF.jpg" alt="home perfil" />
+              </div>
+              <img
+                src="assets/img/shape-wawes.svg"
+                alt=""
+                class="home__shape-wawes"
+              />
+              <img
+                src="assets/img/shape-circle.svg"
+                alt=""
+                class="home__shape-circle"
+              />
             </div>
-        </footer>
+            <ul class="home__social">
+             
+              <a href="https://github.com/sirajchandio" target="_blank" class="home__social-link">
+                <i class="ri-github-line"></i>
+              </a>
+              
+            </ul>
+          </div>
 
+          <div class="home__info">
+            <div>
+              <h3 class="home__info-title">BIOGRAPHY</h3>
+              <p class="home__info-description">
+                Hi, I’m Siraj – WordPress Developer & E-Commerce Manager from
+                Karachi. I craft stunning websites and run successful online
+                stores on eBay/Etsy.
+              </p>
+            </div>
+            <div>
+              <h3 class="home__info-title">CONTACT</h3>
+              <p class="home__info-description">
+                Pakistan <br />
+                mohammadsiraj5454@gmail.com <br />
+                +92 3142710559 <br />
+              </p>
+            </div>
+            <div>
+              <h3 class="home__info-title">ACHIEVEMENTS</h3>
+              <p class="home__info-description">
+                Selected as - cybarriersoultions Bug Bounty Hunnter <br />
+                Selected as - AG Bison ECommerce Store Manager <br />
+              </p>
+            </div>
+          </div>
 
-        <!--========== SCROLL UP ==========-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="ri-arrow-up-line"></i>
-        </a>
+          <div class="home__info">
+            <div>
+              <h3 class="home__info-title">Intermediate</h3>
+              <p class="home__info-number">2024</p>
+            </div>
+            <div>
+              <h3 class="home__info-title">COMPLETED PROJECTS</h3>
+              <p class="home__info-number">2+</p>
+            </div>
+            <div>
+              <h3 class="home__info-title">COMPANIES WORKED FOR</h3>
+              <p class="home__info-number">3+</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">Professional Expertise</span>
 
-        <!--=============== SWIPER JS ===============-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
-        
-        <!--=============== EMAIL JS ===============-->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <div class="skills__container container grid section__border">
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-wordpress-line"></i> WordPress Development
+            </h3>
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/wordpress.svg" alt="WordPress" />
+                </div>
+                <h3 class="skills__name">WordPress</h3>
+                <span class="skills__subtitle">Advanced</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/elementor.svg" alt="Elementor" />
+                </div>
+                <h3 class="skills__name">Elementor</h3>
+                <span class="skills__subtitle">Advanced</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/woocommerce.svg" alt="WooCommerce" />
+                </div>
+                <h3 class="skills__name">WooCommerce</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/php.svg" alt="PHP" />
+                </div>
+                <h3 class="skills__name">PHP</h3>
+                <span class="skills__subtitle">Intermediate</span>
+              </div>
+            </div>
+          </div>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="ri-shopping-bag-line"></i> E-Commerce Management
+            </h3>
+            <div class="skills__info">
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/ebay.svg" alt="eBay" />
+                </div>
+                <h3 class="skills__name">eBay</h3>
+                <span class="skills__subtitle">Advanced</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="assets/img/etsy.svg" alt="Etsy" />
+                </div>
+                <h3 class="skills__name">Etsy</h3>
+                <span class="skills__subtitle">Advanced</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="assets/img/inventory-management.svg"
+                    alt="Inventory"
+                  />
+                </div>
+                <h3 class="skills__name">Inventory Mgmt</h3>
+                <span class="skills__subtitle">Advanced</span>
+              </div>
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="assets/img/customer-service.svg"
+                    alt="Customer Service"
+                  />
+                </div>
+                <h3 class="skills__name">Customer Service</h3>
+                <span class="skills__subtitle">Expert</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle"> Experience and Education </span>
+        <div class="qualification__container container grid section__border">
+          <div class="qualification__content">
+            <h3 class="qualification__title">
+              <i class="ri-book-line"></i> Education
+            </h3>
+            <div class="qualification__info">
+              <div>
+                <h3 class="qualification__name">
+                  Diploma in Software Engineering
+                </h3>
+                <span class="qualification__country">
+                  Aptech North Nazimabad
+                </span>
+                <span class="qualification__year"> 2025 </span>
+              </div>
+
+              <div>
+                <h3 class="qualification__name">Intermediate (HSSC)</h3>
+                <span class="qualification__country">
+                  Jinnah Government College Nazimabad - Karachi
+                </span>
+                <span class="qualification__year"> 2022 - 2024 </span>
+              </div>
+
+              <div>
+                <h3 class="qualification__name">Matriculation (SSC)</h3>
+                <span class="qualification__country">
+                  Candle Light Higher Secondary School
+                </span>
+                <span class="qualification__year"> 2018 - 2021 </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="qualification__content">
+            <h3 class="qualification__title">
+              <i class="ri-building-line"></i> Experience
+            </h3>
+            <div class="qualification__info">
+              <div>
+                <h3 class="qualification__name">ECommerce Store Manager</h3>
+                <span class="qualification__country"> AG Bison </span>
+                <span class="qualification__year"> Feb 2024 - May 2024 </span>
+              </div>
+              <div>
+                <h3 class="qualification__name">Bug Bounty Hunnter</h3>
+                <span class="qualification__country"> cybarriersoultions </span>
+                <span class="qualification__year"> Aug 2024 - Present </span>
+              </div>
+              <div>
+                <h3 class="qualification__name">Sales Agent</h3>
+                <span class="qualification__country"> ----- </span>
+                <span class="qualification__year"> Jan 2023 - Feb 2023 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="assets/img/shape-circle.svg"
+          alt="qualification image"
+          class="qualification__img"
+        />
+      </section>
+
+      <!-- <section class="achievements section" id="achievements">
+        <h2 class="section__title">Achievements</h2>
+        <span class="section__subtitle"> What makes me stand out </span>
+        <div class="achievements__container container grid section__border">
+          <div class="achievements__card">
+            <i class="ri-trophy-line"></i>
+            <h2 class="achievements__title">
+              Winner <br />
+              Summer Amazon Hackathon
+            </h2>
+            <p class="achievements__description">
+              Won Summer Amazon Hackathon, the biggest hackathon of Amazon.
+            </p>
+            <div class="achievements__border"></div>
+          </div>
+          <div class="achievements__card">
+            <i class="ri-trophy-line"></i>
+            <h2 class="achievements__title">
+              Winner <br />
+              Summer Amazon Hackathon
+            </h2>
+            <p class="achievements__description">
+              Won Summer Amazon Hackathon, the biggest hackathon of Amazon.
+            </p>
+            <div class="achievements__border"></div>
+          </div>
+          <div class="achievements__card">
+            <i class="ri-trophy-line"></i>
+            <h2 class="achievements__title">
+              Winner <br />
+              Summer Amazon Hackathon
+            </h2>
+            <p class="achievements__description">
+              Won Summer Amazon Hackathon, the biggest hackathon of Amazon.
+            </p>
+            <div class="achievements__border"></div>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="projects section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle"> My personal projects </span>
+        <div class="container section__border">
+          <div class="projects__container swiper">
+            <div class="swiper-wrapper">
+              <div class="projects__content swiper-slide">
+                <img
+                  src="TRAVEL.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+                <div>
+                  <span class="projects__subtitle"> Fullstack </span>
+                  <h1 class="projects__title">Travel Website</h1>
+                  <a href="#" class="projects__button">
+                    Demo <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="projects__content swiper-slide">
+                <img
+                  src="PORTFOLIO-.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+                <div>
+                  <span class="projects__subtitle"> front-end </span>
+                  <h1 class="projects__title">Portfolio Website</h1>
+                  <a href="#" class="projects__button">
+                    Demo <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="projects__content swiper-slide">
+                <img
+                  src="MOVIES_.png"
+                  alt="projects image"
+                  class="projects__img"
+                />
+                <div>
+                  <span class="projects__subtitle"> front-end </span>
+                  <h1 class="projects__title">Movies Website</h1>
+                  <a href="#" class="projects__button">
+                    Demo <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle"> Get in touch </span>
+        <div class="contact__container container grid section__border">
+          <div class="contact__content">
+            <h3 class="contact__title">
+              <i class="ri-chat-3-line"></i>
+              Text me
+            </h3>
+            <div class="contact__info">
+              <div class="contact__data">
+                <span class="contact__data-title"> Email </span>
+                <span class="contact__data-info">
+                  mohammadsiraj5454@gmail.com
+                </span>
+              </div>
+              <div class="contact__data">
+                <span class="contact__data-title"> WhatsApp </span>
+                <span class="contact__data-info"> +92 3142710559</span>
+                <a href="#" target="_blank" class="contact__button">
+                  Text me <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+              <!-- <div class="contact__data">
+                <span class="contact__data-title"> Telegram </span>
+                <span class="contact__data-info"> https://t.me/contactme </span>
+                <a
+                  href="https://t.me/kritikmodi"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Join <i class="ri-arrow-right-line"></i>
+                </a>
+              </div> -->
+            </div>
+          </div>
+          <div class="contact__content">
+            <h3 class="contact__title">
+              <i class="ri-send-plane-line"></i> Have a query for me?
+            </h3>
+            <form action="" class="contact__form" id="contact-form">
+              <div class="contact__form-div">
+                <label class="contact__form-tag"> Name </label>
+                <input
+                  type="text"
+                  name="user_name"
+                  required
+                  placeholder="Your name"
+                  class="contact__form-input"
+                  id="contact-name"
+                />
+              </div>
+              <div class="contact__form-div">
+                <label class="contact__form-tag"> Email </label>
+                <input
+                  type="email"
+                  name="user_email"
+                  required
+                  placeholder="Your email"
+                  class="contact__form-input"
+                  id="contact-email"
+                />
+              </div>
+              <div class="contact__form-div contact__form-area">
+                <label class="contact__form-tag"> Message </label>
+                <textarea
+                  name="user_project"
+                  placeholder="Ask me something?"
+                  id="contact-project"
+                  class="contact__form-input"
+                ></textarea>
+              </div>
+              <p class="contact__message" id="contact-message"></p>
+              <button type="submit" class="contact__button">
+                Send <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Siraj</h1>
+        <p>Frontend/Backend Developer</p>
+        <ul class="footer__list">
+          <li>
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+          <li>
+            <a href="#skills" class="footer__link">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="footer__link">Projects</a>
+          </li>
+        </ul>
+        <ul class="footer__social">
+          <a href="#" target="_blank" class="footer__social-link">
+            <i class="ri-linkedin-box-line"></i>
+          </a>
+          <a href="#" target="_blank" class="footer__social-link">
+            <i class="ri-github-line"></i>
+          </a>
+          <a href="#" target="_blank" class="footer__social-link">
+            <i class="ri-twitter-line"></i>
+          </a>
+        </ul>
+        <span class="footer__copy"> &#169; Siraj | All rights reserved. </span>
+      </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
