@@ -30,8 +30,8 @@ Hi! I'm **Siraj Chandio**, a passionate and dedicated individual exploring the w
 
 ## 💼 My eCommerce Stores
 
-[![Etsy](https://www.etsy.com/shop/TheDrapersGuild?ref=shop-header-name&listing_id=4295322424&from_page=listing)  
-[![eBay](https://www.ebay.com/sch/i.html?item=234566534809&rt=nc&_trksid=p4429486.m3561.l161211&_ssn=everest-traders)
+[![Etsy](https://www.etsy.com/shop/TheDrapersGuild) ]
+[![eBay](https://www.ebay.com/str/everest-traders)]
 
 ---
 
@@ -48,4 +48,20 @@ Hi! I'm **Siraj Chandio**, a passionate and dedicated individual exploring the w
 ---
 
 ## 📁 Folder Structure
+
+/your-portfolio/
+├── index.html
+├── about.html
+├── projects.html
+├── contact.html
+├── /assets/
+│   ├── /images/
+│   ├── /icons/
+│   └── /css/
+│       └── style.css
+├── /js/
+│   └── script.js
+├── README.md
+├── LICENSE
+
 
